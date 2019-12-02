@@ -7,7 +7,7 @@ import './App.css';
     chamados props (abreviação de propriedades), 
     e retorna uma hierarquia de elementos para exibir.
 */
-
+// props são imutáveis.
 function App(props) {
 
   console.log(props)

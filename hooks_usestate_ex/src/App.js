@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import Appexec from './Appexec';
+import Appcomparison from './Appcomparison';
 
 function App() {
 
   return (
-    <Appexec cor="blue"/>
+    <Appcomparison />
   );
 
 }
