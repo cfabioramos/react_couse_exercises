@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import App from './App';
+import Appexerc from './Appexerc';
 
-ReactDOM.render(<App periodo="Dia" nome="José da Silva"/>, document.getElementById('root'));
+ReactDOM.render(<Appexerc periodo="Dia" finalizedTaskColor="blue"/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
