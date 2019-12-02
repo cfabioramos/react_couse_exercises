@@ -19,7 +19,7 @@ class Appcomparison extends Component {
         return (
           <div>
             <p>Você clicou {this.state.count} vezes no {this.state.botao}</p>
-            <button onClick={() => this.setCount(this.state.count + 1)}> {this.state.botao} </button>
+            <button onClick={(event) => {console.log(event.target);this.setCount(this.state.count + 1)}}> {this.state.botao} </button>
                <h3>Lista de afazeres: </h3>
                <ul>
                    <li>{this.state.todos[0].text}</li>

@@ -10,11 +10,21 @@ class Appcomparison extends React.Component {
     }
 
     componentDidMount() {
-        document.title = `Você clicou ${this.state.quantidade} vezes`;
+        document.title = `Você não clicou `;
+        console.log('Operação de subscribe')
     }
 
-    componentDidUpdate() {
+    componentDidUpdate(prevProps, prevState) {
         document.title = `Você clicou ${this.state.quantidade} vezes`;
+
+        if (prevState.count !== this.state.count) {
+            console.log('Operação custosa...')
+        }
+    }
+
+    componentWillUnmount() {
+        console.log('Operação de unsubscribe')
+        alert('Bateeeeu')
     }
 
     render() {
@@ -27,7 +37,6 @@ class Appcomparison extends React.Component {
             </div>
         )
     }
-
 }
 
 export default Appcomparison;

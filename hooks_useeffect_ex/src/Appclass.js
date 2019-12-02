@@ -18,21 +18,28 @@ Quando você usa o useEffect, você está dizendo ao React para executar
 function Appclass() {
   const [quantidade, setQuantidade] = useState(0);
 
-  // Semelhante a componentDidMount and componentDidUpdate:
   useEffect(() => {
-    // Atualiza o título do documento utilizando a API do browser
+    // Semelhante a componentDidMount e componentDidUpdate
     document.title = `Você clicou ${quantidade} vezes`;
+    console.log('Operação de subscribe...');
 
-    // adicionando limpeza
+    // Semelhante a componentWillUnmount
+    // It cleans up the previous effects before applying the next effects.
     return () => {
-        console.log('Limpeza...');
+        console.log('Operação de unsubscribe...');
     };
+  }, [quantidade]); 
+  // Reexecuta apenas quando "quantidade" e alterada
+  // React não executa o efeito se todos os itens no array são os mesmos
+  // React executa se apenas um for diferente
+  // Se você deseja rodar o effect e o clean apenas uma vez 
+  //  (on mount e unmount), você pode passar um array vazio.
+  // Isso diz que o seu efeito não depende de nenhum valor de props ou state,
+  //  portanto, ele nunca precisa ser reexecutado.
 
-  }, []);
-
-  useEffect(() => {
-    console.log('Funciona!')
-  }, []);
+//  useEffect(() => {
+//    console.log('Funciona!')
+//  }, []);
   /* [] significa que o efeito não usa nenhum valor que participa do fluxo de 
   renderização de dados e, por isso, é seguro para ser aplicado apenas uma vez. */
 
