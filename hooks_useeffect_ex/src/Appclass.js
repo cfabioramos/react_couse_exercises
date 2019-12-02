@@ -28,11 +28,13 @@ function Appclass() {
         console.log('Limpeza...');
     };
 
-  });
+  }, []);
 
   useEffect(() => {
     console.log('Funciona!')
-  });
+  }, []);
+  /* [] significa que o efeito não usa nenhum valor que participa do fluxo de 
+  renderização de dados e, por isso, é seguro para ser aplicado apenas uma vez. */
 
   return (
     <div>
