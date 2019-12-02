@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import Appclass from './Appclass';
+import Appexec from './Appexec';
 
 function App() {
 
   return (
-    <Appclass />
+    <Appexec cor="blue"/>
   );
 
 }
