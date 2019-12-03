@@ -17,6 +17,10 @@ class Appcomparison extends React.Component {
     componentDidUpdate(prevProps, prevState) {
         document.title = `Você clicou ${this.state.quantidade} vezes`;
 
+        console.log('Unsubscribe no friend.id antigo - prevProps.friend.id')
+
+        console.log('Subscribe no próximo friend.id - this.props.friend.id')
+
         if (prevState.count !== this.state.count) {
             console.log('Operação custosa...')
         }
