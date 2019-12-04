@@ -5,7 +5,7 @@ import Footer from './layouts/Footer';
 import MainContent from './MainContent';
 
 /*
-Desafio:
+DESAFIO!
   Criar uma página com três componentes: 
     - Header, chamado MeuHeader com o código HTML:
       <header className="header">
@@ -17,6 +17,7 @@ Desafio:
         </div>
       </header> 
       Link do css: 
+      https://github.com/cfabioramos/react_couse_exercises/blob/master/react-componentizacao/src/layouts/MeuHeaderEx.css
     - MainContent, com elementos de formulário (usar como base: https://htmlreference.io/forms/ )
     - Footer, chamado MeuFooter (liberdade para criar)
 */

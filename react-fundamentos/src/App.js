@@ -4,17 +4,20 @@ import './App.css';
 import Header from './layout/Header'
 
 /*
-  App é um componente React do tipo function. 
-  Um componente recebe parâmetros, 
-    chamados props (abreviação de propriedades), 
-    e retorna uma hierarquia de elementos para exibir.
+  App é um componente React do tipo function. Um componente recebe parâmetros, 
+  chamados props (abreviação de propriedades), e retorna uma hierarquia de elementos para exibir.
 */
-// props são imutáveis.
+/* Pontos a atentar:
+  i. props são imutáveis
+  ii. não necessidade de ponto e vírgula, não ser em loop for
+  iii. a possibilidade de usar arrow functions
+*/
+
 function App(props) {
 
   console.log(props)
-  // JSX: todo o poder do JavaScript para representacao HTML.
-  // Nele você pode colocar quaisquer expressões JavaScript dentro de chaves no JSX.
+  // JSX: todo o poder do JavaScript para representacao HTML
+  // Permite o uso de expressões JavaScript dentro de chaves
   return (
     <div>
       <Header />
