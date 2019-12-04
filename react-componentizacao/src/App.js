@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MeuHeaderEx from './layouts/MeuHeaderEx';
+import MeuNavBar from './layouts/MeuNavBar';
 import Footer from './layouts/Footer';
 import MainContent from './MainContent';
 
@@ -25,7 +25,7 @@ DESAFIO!
 function App() {
   return (
     <div>
-      <MeuHeaderEx />
+      <MeuNavBar />
       <MainContent />
       <Footer /> 
     </div>

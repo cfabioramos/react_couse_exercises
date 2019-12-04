@@ -7,7 +7,7 @@ function MainContent() {
             <p>Aqui estará a descrição inicial da tela no meu main content</p>
             <p>
                 <label>Nome: </label>
-                <input type="text" name="nome"/>
+                <input type="text" name="nome" placeholder="Nome completo"/>
             </p>
             <p>
                 <label>Interesses:</label><br />
